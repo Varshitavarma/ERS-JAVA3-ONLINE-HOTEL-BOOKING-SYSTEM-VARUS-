@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    font-family:"Josefin Sans", sans-serif;
+}
+body{
+    background:url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+    background-size:inherit;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    background: #fff;
+    padding:25px;
+    border-radius:5px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1);    
+}
+ 
+.wrapper h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+    color: MidnightBlue;
+}
+ 
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+ 
+.wrapper textarea {
+    width: 100%;
+    border: 1px solid #DB7093;
+    padding: 10px;
+}
+ 
+ 
+.wrapper .btn input[type="submit"]{
+    border:0;
+    margin-top: 15px;
+    padding:10px;
+    width:100%;
+    background: #fece0C;
+    color: #332902;
+    text-transform: uppercase;
+    Letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}

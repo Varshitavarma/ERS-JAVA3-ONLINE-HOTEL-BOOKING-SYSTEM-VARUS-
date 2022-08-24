@@ -1,0 +1,26 @@
+<body>
+    <div class="wrapper">
+        <h2>CONTACT US</h2>
+        
+        <form (ngSubmit)="contactUs()">
+        <div class="input_field">
+        <input type="text" placeholder="Name" name="name" [(ngModel)]="contact.name">
+        </div>
+        <div class="input_field">
+        <input type="text" placeholder="Subject" name="subject" [(ngModel)]="contact.subject">
+        </div>
+        <div class="input_field">
+        <input type="text" placeholder="Phone" name="phone" [(ngModel)]="contact.phone">
+        </div>
+        <div class="input_field">
+        <input type="text" placeholder="Email" name="email" [(ngModel)]="contact.email">
+        </div>
+        <div class="input_field">
+        <textarea  placeholder="Message" name="message" [(ngModel)]="contact.message"></textarea>
+        </div>
+        <div class="btn">
+        <input type="submit">
+        </div>
+        </form>
+        </div>
+    </body>

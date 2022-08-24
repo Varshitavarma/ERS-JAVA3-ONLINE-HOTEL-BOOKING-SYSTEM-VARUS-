@@ -1,0 +1,66 @@
+<head>
+ 
+    <link rel="stylesheet" href="payment.component.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Enter Payment Details</h1><br>
+            <div class="first-row">
+                <div class="owner">
+                    <h3>Name as in Card</h3>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your Name">
+                    </div>
+                </div>
+                <div class="cvv">
+                    <h3>CVV</h3>
+                    <div class="input-field">
+                        <input type="password" maxlength="3" placeholder="CVV">
+                    </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="card-number">
+                    <h3>Card Number</h3>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter Card Number">
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <h3>Expiry Date</h3>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="July">July</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select> <select name="Years" id="years">
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                        </select>
+                    </div>
+                    <div class="cards">
+                        <img src="p1.png"> <img src="p2.png" > <img src="p3.png"
+       ><br><br>
+       <a (click)="paid()">Proceed to Pay</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </body>

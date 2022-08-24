@@ -1,0 +1,15 @@
+<body>
+ 
+  <form>
+    <div class="form-field">
+      <input type="email" placeholder="Email / Username" name="username" [(ngModel)]="username" required/>
+    </div>
+    
+    <div class="form-field">
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required/></div>
+    
+    <div class="form-field">
+      <button class="btn" type="submit" (click)="checkLogin()">Log in</button>
+    </div>
+  </form>
+  </body>

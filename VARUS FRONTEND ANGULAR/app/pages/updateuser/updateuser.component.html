@@ -1,0 +1,39 @@
+<div class="container">
+    <h3>Update User</h3>
+    <div style="width: 400px;">
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input type="text" class="form-control" id="fname" required [(ngModel)]="user.fname" name="fname">
+        </div>
+     
+        <div class="form-group">
+          <label for="name">Last Name</label>
+          <input type="text" class="form-control" id="lname" required [(ngModel)]="user.lname" name="lname">
+        </div>
+     
+        <div class="form-group">
+          <label for="name">Email Id</label>
+          <input type="text" class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+        </div>
+     
+        <div class="form-group">
+            <label for="name">Phone Number</label>
+            <input type="text" class="form-control" id="phone" required [(ngModel)]="user.phone" name="phone">
+          </div>
+     
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input type="text" class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+          </div>
+     
+          <div class="box radio">
+            <label for="gender" class="fl fontLabel"> Gender: </label>&nbsp; &nbsp;
+                      <input type="radio" name="Gender" value="Male" [(ngModel)]="user.gender" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+                      <input type="radio" name="Gender" value="Female" [(ngModel)]="user.gender" required> Female
+              </div>
+     
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    </div>
